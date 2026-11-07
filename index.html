@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>SmartTrade AI — Authentication Return</title>
+  <style>
+    body{font-family:system-ui,sans-serif;max-width:680px;margin:12vh auto;padding:24px;line-height:1.55;color:#17202a}
+    main{border:1px solid #d8dee4;border-radius:14px;padding:24px}
+    h1{font-size:1.45rem} .note{color:#555}
+  </style>
+</head>
+<body>
+<main>
+  <h1>SmartTrade AI</h1>
+  <p>Authentication return endpoint is online.</p>
+  <p class="note">This placeholder does not collect, display, store, or transmit authentication tokens. It is not yet connected to the SmartTrade AI Android app.</p>
+  <p>If you arrived here after an Angel One login, close this page. Do not copy or share any URL containing authentication parameters.</p>
+</main>
+<script>
+  // Remove any query string or fragment immediately. Never persist callback tokens.
+  if (window.location.search || window.location.hash) {
+    window.history.replaceState(null, document.title, window.location.pathname);
+  }
+</script>
+</body>
+</html>
